@@ -1,3 +1,0 @@
-https://www.jqueryscript.net/demo/responsive-bootstrap-carousel-multiple-items/
-Buen carousel pero con bootstrap 4
-

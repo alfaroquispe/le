@@ -184,10 +184,12 @@ button {
 .navbar-brand {
   margin-right: 0.5rem;
 }
+
 .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 0.4rem;
   padding-left: 0.4rem;
 }
+
 /* =================================== favorite products =================================== */
 .favorite__product {
   position: relative;
@@ -195,7 +197,7 @@ button {
 
 .favorite__product-fringe {
   position: absolute;
-  height: 33%;
+  height: 27%;
   width: 100%;
   background-color: #ed1c24;
   right: 0 !important;
@@ -218,7 +220,7 @@ button {
 
 .img__favorite_products {
   z-index: 100;
-  width: 63%;
+  width: 50%;
   height: auto;
 }
 
@@ -260,17 +262,18 @@ button {
 
 /* =================================== choose us =================================== */
 .choose__us__text {
+  color: #3c3c3c;
   font-size: 19px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   text-align: center;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 
 .choose__us__text:hover {
-  /* color: #ed1c24; */
+  color: #ed1c24;
 }
 
 /* =================================== choose us =================================== */
@@ -505,8 +508,6 @@ button {
   margin-bottom: 0;
 }
 
-
-
 .breadcrumb-item a {
   text-decoration: none;
   color: #6c757d;
@@ -527,20 +528,12 @@ button {
   --bs-breadcrumb-item-active-color: #ed1c24;
 }
 
-
-
-
-
-
-
 .title__name__text {
   font-family: 'Hind Madurai', sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   font-size: 17px;
 }
-
-
 
 h1 {
   font-family: 'Bebas Neue';
@@ -812,6 +805,11 @@ strong {
   height: 60px;
   width: auto;
 }
+.img__gray {
+  /* -webkit-filter: grayscale(0) !important;
+  filter: grayscale(0%) !important;
+  opacity: 1 !important; */
+}
 
 .img__premium_product {
   height: 300px;
@@ -865,6 +863,10 @@ strong {
     height: 65px;
   }
 
+  .img__favorite_products {
+    width: 63%;
+  }
+
   .img__premium_product {
     height: 340px;
   }
@@ -875,6 +877,7 @@ strong {
   .height-slider {
     height: 360px;
   }
+
 
   .button__red {
     padding: 10px 40px;
@@ -1075,27 +1078,122 @@ video::-webkit-media-controls-panel {
   -webkit-transition: all 5s ease-in-out;
 }
 
-.about__title h4{
+.about__title h4 {
   font-family: 'Bebas Neue';
   font-weight: 500;
   font-size: 24px !important
 }
 
-.about__value a h5{  
-    color: #3c3c3c;
-    font-size: 18px !important;
-    font-weight: 400;
-    font-family: 'Barlow Condensed', sans-serif;
-    text-align: start;
-    display: inline;
+.about__value a h5 {
+  color: #6c757d;
+  font-size: 19px !important;
+  /* font-weight: 400; */
+  font-weight: 400;
+  font-family: 'Barlow Condensed', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
+  text-align: start;
+  display: inline;
+  text-transform: none !important;
 }
-.about__value a h5:hover{  
-    color: #ed1c24 !important;
+
+.about__value a h5:hover {
+  color: #ed1c24 !important;
 }
-.about__active {  
-    color: #ed1c24 !important;
-    cursor: default !important;
+
+.about__active {
+  color: #ed1c24 !important;
+  cursor: default !important;
 }
-.about__value .about__active a h5:hover{  
-    color: #ed1c24 !important;
+
+.about__value .about__active a h5:hover {
+  color: #ed1c24 !important;
 }
+
+.list-group-item {
+  padding: .85rem .5rem;
+}
+
+
+/* ==================================================== modal image ====================================================*/
+#expandedImg {
+  cursor: pointer;
+}
+
+
+/* The Modal (background) */
+.product__modal-img {
+  background-color: rgb(0, 0, 0); /* color Fallback  */
+  background-color: rgba(0, 0, 0, 0.9); /*opacity Black  */
+  display: none; /*default Hidden  */
+  left: 0;
+  height: 100%; /* Full height */
+  overflow: auto; /*Enable scroll if needed */
+  position: fixed; /*place Stay  */
+  top: 0;
+  width: 100%; /* Full width */
+  z-index: 3000 !important; /*top Sit  */
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  height: 100%;
+  /* max-width: 400px; */
+}
+
+
+/* Add Animation */
+.modal-content1, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .modal-content1 {
+    height: 100%;
+  }
+}
+
+/* ==================================================== modal image ====================================================*/
