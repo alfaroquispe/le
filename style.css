@@ -57,6 +57,7 @@ a {
   text-decoration: none !important;
 }
 
+
 .color__brand__red {
   color: #ed1c24;
 }
@@ -197,7 +198,7 @@ button {
 
 .favorite__product-fringe {
   position: absolute;
-  height: 27%;
+  height: 30%;
   width: 100%;
   background-color: #ed1c24;
   right: 0 !important;
@@ -220,7 +221,7 @@ button {
 
 .img__favorite_products {
   z-index: 100;
-  width: 50%;
+  width: 60%;
   height: auto;
 }
 
@@ -309,7 +310,7 @@ button {
 }
 
 .nav-link-type {
-  padding: 15px 20px 15px 60px;
+  padding: 15px 15px 15px 30px;
   font-family: 'Antonio';
   font-size: 20px;
   font-weight: 700;
@@ -798,7 +799,7 @@ strong {
 
 
 .height-slider {
-  height: 270px;
+  height: 230px;
 }
 
 .socialnetwork__logo {
@@ -816,7 +817,7 @@ strong {
 }
 
 .img__w__md__logo {
-  width: 170px;
+  width: 150px;
 }
 
 .img__h__md__logo {
@@ -824,11 +825,11 @@ strong {
 }
 
 .img__play-store {
-  width: 140px;
+  width: 120px;
 }
 
 .img__device__comeaventura {
-  width: 180px;
+  width: 150px;
 }
 
 .product {
@@ -864,7 +865,7 @@ strong {
   }
 
   .img__favorite_products {
-    width: 63%;
+    width: 60%;
   }
 
   .img__premium_product {
@@ -874,10 +875,13 @@ strong {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .nav-link-type {
+    padding: 15px 20px 15px 60px;
+  }
+
   .height-slider {
     height: 360px;
   }
-
 
   .button__red {
     padding: 10px 40px;
@@ -926,6 +930,7 @@ strong {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+
   .height-slider {
     height: 480px;
   }
@@ -948,6 +953,9 @@ strong {
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  .px-xl-6 {
+    padding: 0 4.5rem !important;
+  }
   .product__container-package {
     max-width: 420px !important;
     height: 504px !important;
