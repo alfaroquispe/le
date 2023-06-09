@@ -13,13 +13,15 @@ producto fondo 1500 x 1800
   --slide-width: 230px;
   --slide-height: 80px;
   --iteration-time: 40s;
-  --color-lead: #bfc0c0;
   --color-red: #ed1c24;
   --color-red1: #ff1a1a;
   --color-red2: #E61717;
   --color-red3: #c81d25;
   --color-white: #fff;
   --color-black: #3c3c3c;
+  --color-black1: #393939;
+  --color-lead: #bfc0c0;
+  --color-lead-mid: #dadada;
 }
 
 * {
@@ -58,13 +60,85 @@ a {
 }
 
 
+.color__brand__white {
+  color: var(--color-white);
+}
+
 .color__brand__red {
-  color: #ed1c24;
+  color: var(--color-red);
 }
 
 .color__brand__black {
-  color: #3c3c3c;
+  color: var(--color-black);
   /* color: #111820; */
+}
+
+.bg__lead-mid {
+  background-color: var(--color-lead-mid);
+  /* color: #111820; */
+}
+
+h1 {
+  color: var(--color-white);
+  font-family: 'Bebas Neue';
+  letter-spacing: 2px;
+  font-size: 3.25rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-family: 'Bebas Neue';
+  font-size: 2.75rem;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+h3 {
+  font-family: 'Bebas Neue';
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--color-red);
+}
+
+h4 {
+  font-size: 1.75rem !important;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 300;
+  /* text-transform: uppercase; */
+}
+
+h5 {
+  font-size: 19px !important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 14px !important;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+p {
+  /* font-family: 'Open Sans'; */
+  font-family: 'Hind Madurai', sans-serif;
+}
+
+
+
+
+
+.nav__contact {
+  color: var(--color-black);
+  font-size: 17px;
+  /* font-weight: 400; */
+  font-family: 'Barlow Condensed', sans-serif;
+  line-height: 1.3;
 }
 
 .animated {
@@ -95,6 +169,17 @@ a {
   animation-name: fadeIn;
 }
 
+/* =================================== nav =================================== */
+.nav__bar {
+  background-color: var(--color-white);
+  box-shadow: 6px 7px 14px -4px rgba(13, 13, 13, 0.23);
+  height: 65px;
+}
+
+/* =================================== nav =================================== */
+
+
+
 .text__p {
   font-size: 18px !important;
   font-family: 'Barlow Condensed', sans-serif;
@@ -108,7 +193,7 @@ button {
 }
 
 .button__red {
-  background-color: #ed1c24;
+  background-color: var(--color-red);
   color: white;
   font-size: 16px;
   font-family: 'Barlow Condensed', sans-serif;
@@ -118,13 +203,13 @@ button {
 }
 
 .button__red-hover__light:hover {
-  color: #ed1c24;
-  border: 1px solid #ed1c24;
+  color: var(--color-red);
+  border: 1px solid var(--color-red);
   /* padding: 0px 10px; */
 }
 
 .button__red-hover__dark:hover {
-  background-color: #ed1c24;
+  background-color: var(--color-red);
   color: #bfc0c0;
   /* padding: 0px 10px; */
 }
@@ -142,43 +227,43 @@ button {
 }
 
 .nav__sn-fb {
-  background-image: url('./img/logos_rrss/red_facebook.svg');
+  background-image: url('./img/logos/social_networks/red_facebook.svg');
 }
 
 .nav__sn-fb:hover {
-  background-image: url('./img/logos_rrss/black_facebook.svg');
+  background-image: url('./img/logos/social_networks/black_facebook.svg');
 }
 
 .nav__sn-ig {
-  background-image: url('./img/logos_rrss/red_instagram.svg');
+  background-image: url('./img/logos/social_networks/red_instagram.svg');
 }
 
 .nav__sn-ig:hover {
-  background-image: url('./img/logos_rrss/black_instagram.svg');
+  background-image: url('./img/logos/social_networks/black_instagram.svg');
 }
 
 .nav__sn-tt {
-  background-image: url('./img/logos_rrss/red_tiktok.svg');
+  background-image: url('./img/logos/social_networks/red_tiktok.svg');
 }
 
 .nav__sn-tt:hover {
-  background-image: url('./img/logos_rrss/black_tiktok.svg');
+  background-image: url('./img/logos/social_networks/black_tiktok.svg');
 }
 
 .nav__sn-yt {
-  background-image: url('./img/logos_rrss/red_youtube.svg');
+  background-image: url('./img/logos/social_networks/red_youtube.svg');
 }
 
 .nav__sn-yt:hover {
-  background-image: url('./img/logos_rrss/black_youtube.svg');
+  background-image: url('./img/logos/social_networks/black_youtube.svg');
 }
 
 .nav__sn-tw {
-  background-image: url('./img/logos_rrss/red_twitter.svg');
+  background-image: url('./img/logos/social_networks/red_twitter.svg');
 }
 
 .nav__sn-tw:hover {
-  background-image: url('./img/logos_rrss/black_twitter.svg');
+  background-image: url('./img/logos/social_networks/black_twitter.svg');
 }
 
 
@@ -186,10 +271,20 @@ button {
   margin-right: 0.5rem;
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+/* .navbar-expand-md .navbar-nav .nav-link {
   padding-right: 0.4rem;
   padding-left: 0.4rem;
+} */
+
+
+/* =================================== begin slider =================================== */
+.slider__p {
+  font-size: 22px !important;
+  font-weight: 300;
+  line-height: 1.3;
 }
+/* =================================== end slider =================================== */
+
 
 /* =================================== favorite products =================================== */
 .favorite__product {
@@ -200,7 +295,7 @@ button {
   position: absolute;
   height: 30%;
   width: 100%;
-  background-color: #ed1c24;
+  background-color: var(--color-red);
   right: 0 !important;
   top: 50% !important;
   transform: translate(0%, -50%);
@@ -211,7 +306,7 @@ button {
   position: absolute;
   height: 80%;
   width: 70%;
-  background-color: #ed1c24;
+  background-color: var(--color-red);
   right: 50% !important;
   top: 50% !important;
   transform: translate(50%, -50%);
@@ -263,7 +358,7 @@ button {
 
 /* =================================== choose us =================================== */
 .choose__us__text {
-  color: #3c3c3c;
+  color: var(--color-black);
   font-size: 19px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 500;
@@ -274,7 +369,7 @@ button {
 
 
 .choose__us__text:hover {
-  color: #ed1c24;
+  color: var(--color-red);
 }
 
 /* =================================== choose us =================================== */
@@ -285,24 +380,25 @@ button {
 
 /* =================================== carousel brands =================================== */
 .nav-link {
-  display: block;
+  /* display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
-  font-weight: var(--bs-nav-link-font-weight);
-  color: #bfc0c0;
+  font-weight: var(--bs-nav-link-font-weight); */
+  color: var(--color--black);
   text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #ed1c24;
+  color: var(--color-red);
 }
 
 .nav-tabs {
   --bs-nav-tabs-border-width: 0px;
-  --bs-nav-tabs-link-active-color: #ed1c24;
+  --bs-nav-tabs-link-active-color: var(--color-red);
 }
 
 .nav-link-line {
+  color: #bfc0c0;
   font-family: 'Antonio';
   font-size: 25px;
   font-weight: 700;
@@ -310,6 +406,7 @@ button {
 }
 
 .nav-link-type {
+  color: #bfc0c0;
   padding: 15px 15px 15px 30px;
   font-family: 'Antonio';
   font-size: 20px;
@@ -321,7 +418,7 @@ button {
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: white;
-  background-color: #ed1c24;
+  background-color: var(--color-red);
 }
 
 .carousel-control-next,
@@ -334,7 +431,7 @@ button {
   align-items: center;
   justify-content: center;
   padding: 0;
-  /* color: #ed1c24 !important; */
+  /* color: var(--color-red) !important; */
   text-align: center;
   background: 0 0;
   border: 0;
@@ -376,7 +473,7 @@ button {
 /* =================================== footer =================================== */
 
 .footer__contact {
-  white-space: nowrap;
+  /* white-space: nowrap; */
   color: #bfc0c0;
 }
 
@@ -456,43 +553,43 @@ button {
 }
 
 .footer__sn-fb {
-  background-image: url('./img/logos_rrss/facebook_white_square.svg');
+  background-image: url('./img/logos/social_networks/facebook_white_square.svg');
 }
 
 .footer__sn-fb:hover {
-  background-image: url('./img/logos_rrss/facebook_lead_square.svg');
+  background-image: url('./img/logos/social_networks/facebook_lead_square.svg');
 }
 
 .footer__sn-ig {
-  background-image: url('./img/logos_rrss/instagram_white_square.svg');
+  background-image: url('./img/logos/social_networks/instagram_white_square.svg');
 }
 
 .footer__sn-ig:hover {
-  background-image: url('./img/logos_rrss/instagram_lead_square.svg');
+  background-image: url('./img/logos/social_networks/instagram_lead_square.svg');
 }
 
 .footer__sn-tt {
-  background-image: url('./img/logos_rrss/tiktok_white_square.svg');
+  background-image: url('./img/logos/social_networks/tiktok_white_square.svg');
 }
 
 .footer__sn-tt:hover {
-  background-image: url('./img/logos_rrss/tiktok_lead_square.svg');
+  background-image: url('./img/logos/social_networks/tiktok_lead_square.svg');
 }
 
 .footer__sn-yt {
-  background-image: url('./img/logos_rrss/youtube_white_square.svg');
+  background-image: url('./img/logos/social_networks/youtube_white_square.svg');
 }
 
 .footer__sn-yt:hover {
-  background-image: url('./img/logos_rrss/youtube_lead_square.svg');
+  background-image: url('./img/logos/social_networks/youtube_lead_square.svg');
 }
 
 .footer__sn-tw {
-  background-image: url('./img/logos_rrss/twitter_white_square.svg');
+  background-image: url('./img/logos/social_networks/twitter_white_square.svg');
 }
 
 .footer__sn-tw:hover {
-  background-image: url('./img/logos_rrss/twitter_lead_square.svg');
+  background-image: url('./img/logos/social_networks/twitter_lead_square.svg');
 }
 
 .footer_copyright {
@@ -516,7 +613,7 @@ button {
 
 .breadcrumb-item a:hover {
   text-decoration-color: #6c757d;
-  color: #ed1c24;
+  color: var(--color-red);
 }
 
 .breadcrumb-item {
@@ -525,64 +622,13 @@ button {
 }
 
 .breadcrumb {
-  --bs-breadcrumb-divider-color: #ed1c24;
-  --bs-breadcrumb-item-active-color: #ed1c24;
+  --bs-breadcrumb-divider-color: var(--color-red);
+  --bs-breadcrumb-item-active-color: var(--color-red);
 }
 
 .title__name__text {
-  font-family: 'Hind Madurai', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 17px;
-}
-
-h1 {
-  font-family: 'Bebas Neue';
-  letter-spacing: 2px;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 1.1;
-  margin-bottom: 0;
-}
-
-h2 {
-  font-family: 'Bebas Neue';
-  font-size: 50px;
-  font-weight: 600;
-  color: #ed1c24;
-}
-
-h3 {
-  font-family: 'Bebas Neue';
-  font-size: 40px;
-  font-weight: 600;
-  color: #ed1c24;
-}
-
-h4 {
-  font-size: 22px !important;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  /* text-transform: uppercase; */
-}
-
-h5 {
-  font-size: 19px !important;
   font-family: 'Barlow Condensed', sans-serif;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h6 {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 14px !important;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-p {
-  font-family: 'Open Sans';
+  font-size: 18px;
 }
 
 
@@ -783,13 +829,40 @@ strong {
 
 
 /* ====================================================================== carousel products ====================================================================== */
+.carousel__image-banda-color {
+  background-image: url('./img/marcas/banda-color.png');
+}
+
+.carousel__image-eucalipto {
+  background-image: url('./img/marcas/eucalipto.png');
+}
+
+.carousel__image-fideos {
+  background-image: url('./img/marcas/fideos.png');
+}
+
+.carousel__image-stella {
+  background-image: url('./img/marcas/stella-de-oro.png');
+  background-size: auto 60px;
+}
+
+.carousel__image-pipocas {
+  background-image: url('./img/marcas/pipocas.png');
+}
+
+.carousel__image-chizitos {
+  background-image: url('./img/marcas/chizitos.png');
+}
+
+.carousel__image-comecome {
+  background-image: url('./img/marcas/comecome.png');
+}
 
 .carousel .carousel-indicators-2 button {
   width: 10px;
   height: 10px;
   border-radius: 100% !important;
-  /* border: 1px solid #3c3c3c; */
-  background-color: #3c3c3c;
+  background-color: var(--color--black);
 }
 
 .carousel-indicators-2 {
@@ -806,6 +879,7 @@ strong {
   height: 60px;
   width: auto;
 }
+
 .img__gray {
   /* -webkit-filter: grayscale(0) !important;
   filter: grayscale(0%) !important;
@@ -816,8 +890,8 @@ strong {
   height: 300px;
 }
 
-.img__w__md__logo {
-  width: 150px;
+.img__w__sm__logo {
+  width: 140px;
 }
 
 .img__h__md__logo {
@@ -825,7 +899,7 @@ strong {
 }
 
 .img__play-store {
-  width: 120px;
+  width: 110px;
 }
 
 .img__device__comeaventura {
@@ -875,6 +949,10 @@ strong {
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  h2 {
+    font-size: 3rem;
+  }
+
   .nav-link-type {
     padding: 15px 20px 15px 60px;
   }
@@ -896,7 +974,7 @@ strong {
   }
 
 
-  .img__w__md__logo {
+  .img__w__sm__logo {
     width: 200px;
   }
 
@@ -911,7 +989,7 @@ strong {
   .img__device__comeaventura {
     width: 300px;
   }
-
+  
   .product {
     width: 100%;
   }
@@ -930,6 +1008,13 @@ strong {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3.125rem;
+  }
 
   .height-slider {
     height: 480px;
@@ -956,6 +1041,7 @@ strong {
   .px-xl-6 {
     padding: 0 4.5rem !important;
   }
+
   .product__container-package {
     max-width: 420px !important;
     height: 504px !important;
@@ -1065,14 +1151,6 @@ strong {
 
 
 
-/* 0- para las clases que eliminan el margino paddingconfigurándolo en0
-1- (por defecto) para las clases que establecen margino paddingen$spacer * .25
-2- (por defecto) para las clases que establecen margino paddingen$spacer * .5
-3- (por defecto) para las clases que establecen margino paddingen$spacer
-4- (por defecto) para las clases que establecen margino paddingen$spacer * 1.5
-5- (por defecto) para las clases que establecen margino paddingen$spacer * 3
-auto- para clases que configuran el marginauto */
-
 
 video::-webkit-media-controls-panel {
   /* // Your styling here */
@@ -1087,9 +1165,9 @@ video::-webkit-media-controls-panel {
 }
 
 .about__title h4 {
-  font-family: 'Bebas Neue';
-  font-weight: 500;
-  font-size: 24px !important
+  /* font-family: 'Bebas Neue'; */
+  /* font-weight: 500; */
+  font-size: 24px !important;
 }
 
 .about__value a h5 {
@@ -1105,16 +1183,16 @@ video::-webkit-media-controls-panel {
 }
 
 .about__value a h5:hover {
-  color: #ed1c24 !important;
+  color: var(--color-red) !important;
 }
 
 .about__active {
-  color: #ed1c24 !important;
+  color: var(--color-red) !important;
   cursor: default !important;
 }
 
 .about__value .about__active a h5:hover {
-  color: #ed1c24 !important;
+  color: var(--color-red) !important;
 }
 
 .list-group-item {
@@ -1130,16 +1208,24 @@ video::-webkit-media-controls-panel {
 
 /* The Modal (background) */
 .product__modal-img {
-  background-color: rgb(0, 0, 0); /* color Fallback  */
-  background-color: rgba(0, 0, 0, 0.9); /*opacity Black  */
-  display: none; /*default Hidden  */
+  background-color: rgb(0, 0, 0);
+  /* color Fallback  */
+  background-color: rgba(0, 0, 0, 0.9);
+  /*opacity Black  */
+  display: none;
+  /*default Hidden  */
   left: 0;
-  height: 100%; /* Full height */
-  overflow: auto; /*Enable scroll if needed */
-  position: fixed; /*place Stay  */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /*Enable scroll if needed */
+  position: fixed;
+  /*place Stay  */
   top: 0;
-  width: 100%; /* Full width */
-  z-index: 3000 !important; /*top Sit  */
+  width: 100%;
+  /* Full width */
+  z-index: 3000 !important;
+  /*top Sit  */
 }
 
 /* Modal Content (image) */
@@ -1152,7 +1238,8 @@ video::-webkit-media-controls-panel {
 
 
 /* Add Animation */
-.modal-content1, #caption {
+.modal-content1,
+#caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -1205,3 +1292,14 @@ video::-webkit-media-controls-panel {
 }
 
 /* ==================================================== modal image ====================================================*/
+
+
+
+/* 1rem = 16px */
+/* 0- para las clases que eliminan el margino paddingconfigurándolo en0
+1- (por defecto) para las clases que establecen margino paddingen$spacer * .25
+2- (por defecto) para las clases que establecen margino paddingen$spacer * .5
+3- (por defecto) para las clases que establecen margino paddingen$spacer
+4- (por defecto) para las clases que establecen margino paddingen$spacer * 1.5
+5- (por defecto) para las clases que establecen margino paddingen$spacer * 3
+auto- para clases que configuran el marginauto */
