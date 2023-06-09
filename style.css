@@ -69,7 +69,7 @@ a {
 }
 
 .color__brand__black {
-  color: var(--color-black);
+  color: var(--color-black) !important;
   /* color: #111820; */
 }
 
@@ -129,8 +129,18 @@ p {
   font-family: 'Hind Madurai', sans-serif;
 }
 
+.subtitle {
+  color: #ed1c24;
+  font-size: 23px !important;
+  text-align: start !important;
+  text-transform: none !important;
+}
 
-
+.line__title {
+  height: 7px;
+  width: 35px;
+  background-color: var(--color-red);
+}
 
 
 .nav__contact {
@@ -283,6 +293,7 @@ button {
   font-weight: 300;
   line-height: 1.3;
 }
+
 /* =================================== end slider =================================== */
 
 
@@ -921,8 +932,8 @@ strong {
 }
 
 .product__container-package {
-  min-width: 375px !important;
-  height: 450px !important;
+  min-width: 300px !important;
+  height: 350px !important;
   background-repeat: no-repeat !important;
   background-position: center !important;
   background-size: auto 100% !important;
@@ -934,6 +945,11 @@ strong {
 // No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  .product__container-package {
+    min-width: 375px !important;
+    height: 450px !important;
+  }
+
   .socialnetwork__logo {
     height: 65px;
   }
@@ -989,7 +1005,7 @@ strong {
   .img__device__comeaventura {
     width: 300px;
   }
-  
+
   .product {
     width: 100%;
   }
@@ -1021,7 +1037,9 @@ strong {
   }
 
   .img__premium_product {
-    height: 430px;
+    /* height: 430px; */
+    width: 100%;
+    height: auto;
   }
 
   .product__img-package {
@@ -1201,13 +1219,40 @@ video::-webkit-media-controls-panel {
 
 
 /* ==================================================== modal image ====================================================*/
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row-gallery:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container-gallery {
+  position: relative;
+}
+
+
 #expandedImg {
   cursor: pointer;
 }
 
-
 /* The Modal (background) */
-.product__modal-img {
+.product__modal__container {
   background-color: rgb(0, 0, 0);
   /* color Fallback  */
   background-color: rgba(0, 0, 0, 0.9);
@@ -1229,7 +1274,7 @@ video::-webkit-media-controls-panel {
 }
 
 /* Modal Content (image) */
-.modal-content1 {
+.product__modal__container-img {
   margin: auto;
   display: block;
   height: 100%;
@@ -1238,7 +1283,7 @@ video::-webkit-media-controls-panel {
 
 
 /* Add Animation */
-.modal-content1,
+.product__modal__container-img,
 #caption {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
@@ -1286,7 +1331,7 @@ video::-webkit-media-controls-panel {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
-  .modal-content1 {
+  .product__modal__container-img {
     height: 100%;
   }
 }
