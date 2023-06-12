@@ -399,10 +399,6 @@ button {
   text-decoration: none;
 }
 
-.nav-link:hover {
-  color: var(--color-red);
-}
-
 .nav-tabs {
   --bs-nav-tabs-border-width: 0px;
   --bs-nav-tabs-link-active-color: var(--color-red);
@@ -426,6 +422,17 @@ button {
   text-align: end;
 }
 
+.nav-link-line:hover, .nav-link-type:hover  {
+  color: var(--color-red);
+}
+.nav-link-line.active:hover {
+  color: var(--color-red);
+  cursor: default;
+}
+.nav-link-type.active:hover {
+  color: #bfc0c0;
+  cursor: default;
+}
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: white;
@@ -916,6 +923,18 @@ strong {
 .img__device__comeaventura {
   width: 150px;
 }
+.border__bottom__substance {
+  height: 1px;
+  background-color: var(--color-black);
+  margin-bottom: .25rem;
+  width: 37%;
+}
+.product__daily__value {
+  font-family:'Barlow Condensed', sans-serif;
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
 
 .product {
   width: 80%;
@@ -1204,12 +1223,15 @@ video::-webkit-media-controls-panel {
   color: var(--color-red) !important;
 }
 
-.about__active {
+.link__light-active {
   color: var(--color-red) !important;
-  cursor: default !important;
+  cursor: default;
+}
+.nav-link.link__light-active {
+  cursor: pointer;
 }
 
-.about__value .about__active a h5:hover {
+.about__value .link__light-active a h5:hover {
   color: var(--color-red) !important;
 }
 
