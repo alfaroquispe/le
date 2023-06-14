@@ -942,7 +942,7 @@ strong {
 }
 
 .product__img-package {
-  width: 65% !important;
+  width: 75% !important;
   transition: transform .3s;
   /* Animation */
 }
