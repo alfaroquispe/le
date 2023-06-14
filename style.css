@@ -942,7 +942,7 @@ strong {
 }
 
 .product__img-package {
-  width: 75% !important;
+  width: 65% !important;
   transition: transform .3s;
   /* Animation */
 }
@@ -959,6 +959,7 @@ strong {
   background-size: auto 100% !important;
   align-self: center;
 }
+
 
 
 /* // X-Small devices (portrait phones, less than 576px)
