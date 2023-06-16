@@ -497,6 +497,7 @@ button {
   
 }
 .banner__img {
+  margin-bottom: -5%;
 }
 
 
@@ -996,6 +997,7 @@ strong {
   .img__premium_product {
     height: 340px;
   }
+  
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -1056,15 +1058,15 @@ strong {
 
   .banner__title {
     position: absolute;
-    width: 38%;
+    width: 40%;
     height: 100%;
     left: 0;
     bottom: 0;
   }
   .banner__img {
-    width: 62%;
-    margin-bottom: -4%;
+    margin-bottom: -3%;
     margin-left: auto;
+    width: 60%;
   }
 
 }
