@@ -23,6 +23,7 @@ producto fondo 1500 x 1800
   --color-black1: #393939;
   --color-lead: #bfc0c0;
   --color-lead-mid: #dadada;
+  --font-family-title: 'Bebas Neue';
 }
 
 * {
@@ -81,7 +82,7 @@ a {
 
 h1 {
   color: var(--color-white);
-  font-family: 'Bebas Neue';
+  font-family: var(--font-family-title);
   letter-spacing: 2px;
   font-size: 3.25rem;
   font-weight: 700;
@@ -90,14 +91,14 @@ h1 {
 }
 
 h2 {
-  font-family: 'Bebas Neue';
+  font-family: var(--font-family-title);
   font-size: 2.75rem;
   font-weight: 600;
   color: var(--color-red);
 }
 
 h3 {
-  font-family: 'Bebas Neue';
+  font-family: var(--font-family-title);
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--color-red);
@@ -105,7 +106,7 @@ h3 {
 
 h4 {
   font-size: 1.75rem !important;
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: var(--font-family-title);
   font-weight: 300;
   /* text-transform: uppercase; */
 }
@@ -1372,3 +1373,9 @@ video::-webkit-media-controls-panel {
 4- (por defecto) para las clases que establecen margino paddingen$spacer * 1.5
 5- (por defecto) para las clases que establecen margino paddingen$spacer * 3
 auto- para clases que configuran el marginauto */
+
+/* color dulces back
+EEEEEE 85
+E15349 75
+E8E8E8 75
+70 ffb3b3 */
