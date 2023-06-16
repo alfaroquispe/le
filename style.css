@@ -30,17 +30,20 @@ producto fondo 1500 x 1800
   /* border: 1px solid black; */
 }
 
-.borb {
-  border: 1px solid black;
+/* .borr {
+  border: 1px solid red;
 }
 
-.borr {
-  border: 1px solid red;
+.borb {
+  border: 1px solid black;
 }
 
 .bory {
   border: 1px solid yellow;
 }
+.borg {
+  border: 1px solid green;
+} */
 
 /* font-family: 'Antonio', sans-serif;
 font-family: 'Barlow Condensed', sans-serif;
@@ -488,6 +491,18 @@ button {
 }
 
 /* =================================== carousel brands =================================== */
+
+/* =================================== banner candies =================================== */
+.banner__title {
+  
+}
+.banner__img {
+  margin-bottom: -7%;
+  margin-top: -7%;
+}
+
+
+
 
 
 /* =================================== footer =================================== */
@@ -1041,6 +1056,18 @@ strong {
     height: 396px !important;
   }
 
+  .banner__title {
+    position: absolute;
+    width: 38%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+  .banner__img {
+    width: 62%;
+    margin-bottom: -4%;
+    margin-left: auto;
+  }
 
 }
 

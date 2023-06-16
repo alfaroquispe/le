@@ -175,17 +175,15 @@
       <div class="row mx-0">
         <div class="px-0">
           <!-- <div class="row mx-0" style="background-color: #EEEEEE;"> -->
-          <div class="row mx-0 " style=" background-image: url('../../img/productos/dulces/fondo.png');background-repeat: no-repeat !important;
-          background-position: center !important;
-          background-size: 100% auto !important;">
-            <div class=" col-4 pe-0 ps-5 d-flex align-items-center justify-content-center" style="position: relative;">
-              <div class=" p-4" style="border-radius: 10px ;position: absolute;width: 85%; left: 30%;text-align: center;background-color: rgba(255, 255, 255, 0.3);">
-                <h2  style="font-family: 'Oswald', sans-serif;text-transform: uppercase;" class="">Los <span class="color__brand__black"> Mejores Dulces</span> para las mejores ocaciones</h2>
+          <div class="row mx-0 borg" style="position: relative; background-image: url('../../img/slider/dulces_background.jpg');background-repeat: no-repeat !important;background-size: cover !important;">
+            <div class="px-5 d-flex align-items-center justify-content-center borb banner__title" style="">
+              <div class="p-4 pb-0 bory" style="border-radius: 10px;text-align: center;background-color: rgba(255, 255, 255, 0.075);">
+                <h2  style="font-family: 'Oswald', sans-serif;text-transform: uppercase;" class="color__brand__white">Los <span class="color__brand__black"> Mejores Dulces</span> para las mejores ocaciones</h2>
                 <div></div>
               </div>
             </div>
-            <div class=" col-8 px-0 text-end pt-4 ">
-              <img class="" width="90%" src="../../img/productos/dulces/Dulces2.webp" alt="" style="">
+            <div class="px-0 pt-md-5 text-end borg banner__img" style="">
+              <img class="bory" width="100%" src="../../img/productos/dulces/Dulces2.webp" alt="">
             </div>
           </div>
         </div>
@@ -270,9 +268,9 @@
           <div class="order-1 order-md-2 col-12 col-md-6 px-0 px-lg-5">
             <!-- The four columns -->
             <div class="row-gallery">
-              <div class="container-gallery">
+              <div class="container-gallery" style="background-color: #fafafa;">
                 <div class="mx-auto product d-flex align-items-start justify-content-center">
-                  <div id="expandedImgBackground" class="d-flex align-items-center justify-content-center product__container-package" style="background-image: url('../../img/productos/backgrounds/background.png');">
+                  <div id="expandedImgBackground" class="d-flex align-items-center justify-content-center product__container-package" style="background-image: url('');">
                     <div class="d-flex justify-content-center">
                       <img id="expandedImg" class="product__img-package align-self-center" src="../../img/productos/dulces/banda-color.webp" alt="">
                     </div>
@@ -540,7 +538,7 @@
         expandedImgBackground.style.backgroundImage = `url('${imgs.src}')`;
         expandImg.style.visibility = "hidden";
       } else {
-        expandedImgBackground.style.backgroundImage = "url('../../img/productos/backgrounds/background.png')"
+        expandedImgBackground.style.backgroundImage = "url('')"
         expandImg.style.visibility = "visible";
         expandImg.src = imgs.src;
       }
