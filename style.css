@@ -30,7 +30,7 @@ producto fondo 1500 x 1800
   /* border: 1px solid black; */
 }
 
-/* .borr {
+.borr {
   border: 1px solid red;
 }
 
@@ -43,7 +43,7 @@ producto fondo 1500 x 1800
 }
 .borg {
   border: 1px solid green;
-} */
+}
 
 /* font-family: 'Antonio', sans-serif;
 font-family: 'Barlow Condensed', sans-serif;
@@ -397,10 +397,10 @@ button {
 /* =================================== carousel brands =================================== */
 .nav-link {
   /* display: block;
-  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  padding: var(--bs-...........-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
   font-weight: var(--bs-nav-link-font-weight); */
-  color: var(--color--black);
+  color: #000;
   text-decoration: none;
 }
 
@@ -427,10 +427,35 @@ button {
   text-align: end;
 }
 
-.nav-link-line:hover, .nav-link-type:hover  {
+.nav-link-presentation {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+.nav-link-info {
+  color: var(--color-black);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  border-bottom: 2px solid transparent !important;
+}
+
+.nav-link-line:hover, .nav-link-type:hover, .nav-link-presentation:hover {
   color: var(--color-red);
 }
-.nav-link-line.active:hover {
+.nav-link-info:hover  {
+  color: var(--color-black);
+  border-bottom: 2px solid var(--color-red) !important;
+}
+.nav-link-info.active  {
+  color: var(--color-black) !important;
+  border-bottom: 2px solid var(--color-red) !important;
+}
+.nav-link-line.active:hover, .nav-link-presentation.active:hover {
+  color: var(--color-red);
+  cursor: default;
+}
+.nav-link-info.active:hover {
   color: var(--color-red);
   cursor: default;
 }
