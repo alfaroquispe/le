@@ -24,13 +24,14 @@ producto fondo 1500 x 1800
   --color-lead: #bfc0c0;
   --color-lead-mid: #dadada;
   --font-family-title: 'Bebas Neue';
+  --font-family-title2: 'Oswald';
 }
 
 * {
   /* border: 1px solid black; */
 }
 
-/* .borr {
+.borr {
   border: 1px solid red;
 }
 
@@ -43,7 +44,7 @@ producto fondo 1500 x 1800
 }
 .borg {
   border: 1px solid green;
-} */
+}
 
 /* font-family: 'Antonio', sans-serif;
 font-family: 'Barlow Condensed', sans-serif;
@@ -101,11 +102,18 @@ h2 {
 }
 
 h3 {
+  color: var(--color-white);
+  font-family: var(--font-family-title2);
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+/* h3 {
   font-family: var(--font-family-title);
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--color-red);
-}
+} */
 
 h4 {
   font-size: 1.75rem !important;
@@ -519,10 +527,33 @@ button {
 
 /* =================================== banner candies =================================== */
 .banner__title {
+  background-color: rgba(255, 255, 255, 0.075);
+  border-radius: 10px;
+  text-align: center;
+}
+.banner__text {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+.banner__container {
   
 }
 .banner__img {
   margin-bottom: -5%;
+}
+.banner {
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  position: relative;
+}
+.background__img-snacks {
+  background-image: url('../../img/backgrounds/background_snacks.jpg');
+}
+.background__img-dulces {
+  background-image: url('../../img/backgrounds/background_dulces.jpg');
+}
+.background__img-fideos {
+  background-image: url('../../img/backgrounds/.background__img-fideos.jpg');
 }
 
 
@@ -1081,7 +1112,7 @@ strong {
     height: 396px !important;
   }
 
-  .banner__title {
+  .banner__container {
     position: absolute;
     width: 40%;
     height: 100%;
