@@ -57,7 +57,9 @@ font-family: 'Open Sans', sans-serif;
 font-family: 'Poltawski Nowy', serif;
 font-family: 'PT Serif', serif;
 font-family: 'Source Serif 4', serif;
-font-family: 'Vollkorn', serif; */
+font-family: 'Vollkorn', serif;
+font-family: 'Questrial', sans-serif;
+*/
 
 /* =================================== GENERAL =================================== */
 
@@ -476,6 +478,24 @@ button {
   color: white;
   background-color: var(--color-red);
 }
+.product__content-substance {
+  font-family: 'Questrial', sans-serif;
+  text-align: start;
+  text-transform: none;
+}
+.product__content-percentage {
+  font-family: 'Questrial', sans-serif;
+  font-size: 22px !important;
+  text-align: end;
+  text-transform: none;
+}
+
+.border__bottom_4 {
+  border-bottom: 4px solid black;
+}
+.border__bottom_1 {
+  border-bottom: 1px solid black;
+}
 
 .carousel-control-next,
 .carousel-control-prev {
@@ -553,7 +573,7 @@ button {
   background-image: url('../../img/backgrounds/background_dulces.jpg');
 }
 .background__img-fideos {
-  background-image: url('../../img/backgrounds/.background__img-fideos.jpg');
+  background-image: url('../../img/backgrounds/background_fideos.jpg');
 }
 
 
@@ -783,7 +803,6 @@ strong {
   position: absolute;
   top: 50%;
   left: 75%;
-  padding: 1.25rem 3rem;
   color: #fff;
   text-align: center;
   transform: translate(-50%, -50%);
@@ -1351,6 +1370,8 @@ video::-webkit-media-controls-panel {
 }
 
 .container-gallery {
+  background-color: #fafafa;
+  /* background-color: #fafafa; correcto arriba prueba */
   position: relative;
 }
 

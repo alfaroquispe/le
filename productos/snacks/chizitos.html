@@ -17,8 +17,8 @@
   <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Oswald&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100;200;300;400;500;600;700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Hind+Madurai:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poltawski+Nowy:ital,wght@1,400;1,500;1,600;1,700&family=Source+Serif+4:ital,wght@1,400;1,500&family=Vollkorn:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../../style.css">
-  
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-BN0ECGQQJW"></script>
   <script>
@@ -272,7 +272,7 @@
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-product1-images" role="tabpanel" aria-labelledby="nav-product1-images-tab" tabindex="0">
                     <div class="row-gallery">
-                      <div class="container-gallery" style="background-color: #fafafa;">
+                      <div class="container-gallery">
                         <div class="mx-auto product d-flex align-items-start justify-content-center">
                           <div id="expandedImgBackground" class="d-flex align-items-center justify-content-center product__container-package" style="background-image: url('');">
                             <div class="d-flex justify-content-center">
@@ -296,37 +296,46 @@
                       <img src="../../img/productos/snacks/informacion_nutricional_chizitos.png" alt="" style="width: 100%;">
                     </div>
                   </div>
-                  <div class="tab-pane fade bory" id="nav-product1-content" role="tabpanel" aria-labelledby="nav-product1-content-tab" tabindex="0">
-
-                    <div class="pt-3 pb-2">
-                      <h5 class="subtitle color__brand__black">Cada porción de 25 g contiene:</h5>
-                      <div class="d-flex flex-wrap">
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Energía</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">110,8 kcal</h4>
-                          <h4 style="font-size: 1.35rem !important;">3,3%</h4>
+                  <div class="tab-pane fade" id="nav-product1-content" role="tabpanel" aria-labelledby="nav-product1-content-tab" tabindex="0">
+                    <div class="py-4 px-5" style="background-color: #fafafa;">
+                      <div class="pt-2 border__bottom_4">
+                        <h5 class="product__content-percentage" style="font-size: 20px !important"><b>Cada porción de 25 g contiene:</b></h5>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Energía </b>110,8 kcal</h5>
                         </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Carbohidratos</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">17,8 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,7%</h4>
-                        </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Grasas Totales</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">3,7 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,5%</h4>
-                        </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Proteínas</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">1,7 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,9%</h4>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>3,3%</b></h5>
                         </div>
                       </div>
-                      <p class="text__p mb-1">% Valor diario basado en una dieta de 2000 kcal.</p>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Carbohidratos </b>17,8 g</h5>
+                        </div>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>5,7%</b></h5>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Grasas Totales </b>3,7 g</h5>
+                        </div>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>5,5%</b></h5>
+                        </div>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Proteínas </b>1,7 g</h5>
+                        </div>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>5,9%</b></h5>
+                        </div>
+                      </div>
+                      <div class="pt-3">
+                        <h5 style="text-transform: none;" class="text__p mb-1">% Valor diario basado en una dieta de 2000 kcal.</h5>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -344,9 +353,9 @@
                 <div class="tab-content" id="nav-tabContent">
                   <div class="tab-pane fade show active" id="nav-product2-images" role="tabpanel" aria-labelledby="nav-product2-images-tab" tabindex="0">
                     <div class="row-gallery">
-                      <div class="container-gallery" style="background-color: #fafafa;">
+                      <div class="container-gallery">
                         <div class="mx-auto product d-flex align-items-start justify-content-center">
-                          <div id="expandedImgBackground" class="d-flex align-items-center justify-content-center product__container-package" style="background-image: url('');">
+                          <div id="expandedImgBackground" class="d-flex align-items-center justify-content-center product__container-package">
                             <div class="d-flex justify-content-center">
                               <img id="expandedImg" class="product__img-package align-self-center" src="../../img/productos/snacks/chizitos-familiar.webp" alt="">
                             </div>
@@ -368,66 +377,46 @@
                       <img src="../../img/productos/snacks/informacion_nutricional_chizitos-familiar.png" alt="" style="width: 100%;">
                     </div>
                   </div>
-                  <div class="tab-pane fade bory" id="nav-product2-content" role="tabpanel" aria-labelledby="nav-product2-content-tab" tabindex="0">
-                    <!-- <div class="pt-3 pb-2">
-                      <h5 class="subtitle color__brand__black">Cada porción de 25 g contiene:</h5>
-                      <div class="d-flex flex-wrap">
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Energía</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">110,8 kcal</h4>
-                          <h4 style="font-size: 1.35rem !important;">3,3%</h4>
+                  <div class="tab-pane fade" id="nav-product2-content" role="tabpanel" aria-labelledby="nav-product2-content-tab" tabindex="0">
+
+                    <div class="py-4 px-5" style="background-color: #fafafa;">
+                      <div class="pt-2 border__bottom_4">
+                        <h5 class="product__content-percentage" style="font-size: 20px !important"><b>Cada porción de 44 g contiene:</b></h5>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Energía </b>194,92 kcal</h5>
                         </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Carbohidratos</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">17,8 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,7%</h4>
-                        </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Grasas Totales</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">3,7 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,5%</h4>
-                        </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Proteínas</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">1,7 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,9%</h4>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>9,75%</b></h5>
                         </div>
                       </div>
-                      <p class="text__p mb-1">% Valor diario basado en una dieta de 2000 kcal.</p>
-                    </div> -->
-
-                    <div class="pt-3 pb-2 border-bottom ">
-                      <h5 class="subtitle">Cada porción de 44 g contiene:</h5>
-                      <div class="d-flex flex-wrap">
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Energía</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">194,92 kcal</h4>
-                          <h4 style="font-size: 1.35rem !important;">9,75%</h4>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Carbohidratos </b>31,28 g</h5>
                         </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Carbohidratos</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">31,28 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">10,44%</h4>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>10,44%</b></h5>
                         </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Grasas Totales</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">6,56 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">10,08%</h4>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Grasas Totales </b>6,56 g</h5>
                         </div>
-                        <div class="pe-4 pe-lg-5">
-                          <p class="text__p mb-0">Proteínas</p>
-                          <div class="border__bottom__substance"></div>
-                          <h4 class="product__daily__value">2,93 g</h4>
-                          <h4 style="font-size: 1.35rem !important;">5,88%</h4>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>10,08%</b></h5>
                         </div>
-                        <p class="text__p mb-1">% Valor diario basado en una dieta de 2000 kcal.</p>
+                      </div>
+                      <div class="d-flex justify-content-between pt-3 border__bottom_1">
+                        <div class="align-self-end">
+                          <h5 class="mb-1 product__content-substance"><b>Proteínas </b>2,93 g</h5>
+                        </div>
+                        <div class="">
+                          <h5 class="mb-1 product__content-percentage"><b>5,88%</b></h5>
+                        </div>
+                      </div>
+                      <div class="pt-3">
+                        <h5 style="text-transform: none;" class="text__p mb-1">% Valor diario basado en una dieta de 2000 kcal.</h5>
                       </div>
                     </div>
                   </div>
@@ -450,7 +439,7 @@
         <div class="row mx-0">
 
           <div class="order-2 order-md-1 pt-4 pt-md-0 col-12 col-md-6 px-0 pe-sm-2 pe-md-4 pe-lg-5">
-            
+
           </div>
         </div>
       </div>
