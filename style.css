@@ -796,7 +796,7 @@ strong {
 
 /* =========  ========================== slider =================================== */
 
-.carousel-caption {
+.carousel-caption-lines {
   /* border: 1px solid red; */
   width: 50%;
   height: 100%;
@@ -1038,7 +1038,7 @@ strong {
 }
 
 .product__img-package:hover {
-  transform: scale(1.06);
+  transform: scale(1.1);
 }
 
 .product__container-package {
@@ -1371,12 +1371,11 @@ video::-webkit-media-controls-panel {
 
 .container-gallery {
   background-color: #fafafa;
-  /* background-color: #fafafa; correcto arriba prueba */
   position: relative;
 }
 
 
-#expandedImg {
+#expandedImg, #expandedImg-product1, #expandedImg-product2, #expandedImg-product3 {
   cursor: pointer;
 }
 
@@ -1410,10 +1409,16 @@ video::-webkit-media-controls-panel {
   /* max-width: 400px; */
 }
 
+#imgtitle {
+  position: absolute;
+  bottom: -7px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 
 /* Add Animation */
-.product__modal__container-img,
-#caption {
+.product__modal__container-img {
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
