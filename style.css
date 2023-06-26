@@ -98,7 +98,7 @@ h1 {
 
 h2 {
   font-family: var(--font-family-title);
-  font-size: 2.75rem;
+  font-size: 2.35rem;
   font-weight: 600;
   color: var(--color-red);
 }
@@ -306,7 +306,7 @@ button {
 .slider__p {
   font-size: 22px !important;
   font-weight: 300;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 /* =================================== end slider =================================== */
@@ -1056,6 +1056,9 @@ strong {
 // No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+  h2 {
+    font-size: 2.75rem;
+  }
   .product__container-package {
     min-width: 375px !important;
     height: 450px !important;
@@ -1063,6 +1066,9 @@ strong {
 
   .socialnetwork__logo {
     height: 65px;
+  }
+  .slider__p {
+    line-height: 1.3;
   }
 
   .img__favorite_products {
