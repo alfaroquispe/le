@@ -467,6 +467,11 @@ button {
 }
 .nav-link-info.active  {
   color: var(--color-black) !important;
+  background-color: none;
+  border-bottom: 2px solid var(--color-red) !important;
+}
+.nav-link-info.active  {
+  color: var(--color-black) !important;
   border-bottom: 2px solid var(--color-red) !important;
 }
 .nav-link-line.active:hover, .nav-link-presentation.active:hover {
@@ -485,6 +490,26 @@ button {
 .nav-pills .show>.nav-link {
   color: white;
   background-color: var(--color-red);
+}
+.nav-link-agencie {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid transparent !important;
+}
+.nav-link-agencie.active {
+  color: #000 !important;
+  background-color: white !important;
+  border: 1px solid var(--color-red) !important;
+}
+.nav-link-agencie.active h5 {
+  color: var(--color-red);
+}
+.nav-link-agencie:hover h5 {
+  color: var(--color-red);
+}
+.nav-link-agencie:hover {
+  color: #000 !important;
+  border: 1px solid var(--color-red) !important;
 }
 .product__content-substance {
   font-family: 'Questrial', sans-serif;
