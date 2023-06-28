@@ -23,8 +23,12 @@ producto fondo 1500 x 1800
   --color-black1: #393939;
   --color-lead: #bfc0c0;
   --color-lead-mid: #dadada;
+  --color-light: #fafafa;
   --font-family-title: 'Bebas Neue';
   --font-family-title2: 'Oswald';
+
+  --bs-accordion-btn-active-icon: url('./img/svg/accordion-button.svg');
+  --height-agencies: 500px;
 }
 
 * {
@@ -83,6 +87,10 @@ a {
 
 .bg__lead-mid {
   background-color: var(--color-lead-mid);
+  /* color: #111820; */
+}
+.bg__light {
+  background-color: var(--color-light);
   /* color: #111820; */
 }
 
@@ -450,9 +458,9 @@ button {
   border-bottom: 2px solid transparent !important;
 }
 
-.nav-link-line:hover, .nav-link-type:hover, .nav-link-presentation:hover {
+/* .nav-link-line:hover, .nav-link-type:hover, .nav-link-presentation:hover {
   color: var(--color-red);
-}
+} */
 .nav-link-info:hover  {
   color: var(--color-black);
   border-bottom: 2px solid var(--color-red) !important;
@@ -1049,7 +1057,57 @@ strong {
   background-size: auto 100% !important;
   align-self: center;
 }
+/* ====================================================================== carousel agencies ====================================================================== */
+.accordion {
+  --bs-accordion-btn-active-icon: url('./img/svg/accordion-button.svg');
+}
+.agencies-h {
+  height: auto;
+}
+.agencies__map-h {
+  height: 250px;
+}
+.accordion-body {
+  padding: 0px 0px 0px 5px;
+  max-height: 395px;
+  overflow-y: scroll;
+}
+.accordion-item {
+  color: var(--bs-accordion-color);
+  background-color: var(--bs-accordion-bg);
+  border: none;
+}
+.accordion-button {
+  padding: 15px 15px 15px 0px;
+  font-size: 1rem;
+  text-align: left;
+  color: var(--color-black);
+  background-color: var(--color-light);
+}
+.accordion-button:focus {
+  z-index: 3;
+  border-color: var(--bs-accordion-btn-focus-border-color);
+  outline: 0;
+  box-shadow: none;
+}
+.accordion-button h5{
+  color: var(--color-black);
+}
 
+.accordion-button:not(.collapsed) {
+  background-color: var(--color-light);
+  box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+.accordion-button:not(.collapsed) h5 {
+  color: var(--color-red) !important;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.nav-link:hover {
+  color: var(--color-red);
+}
 
 
 /* // X-Small devices (portrait phones, less than 576px)
@@ -1063,7 +1121,7 @@ strong {
     min-width: 375px !important;
     height: 450px !important;
   }
-
+  
   .socialnetwork__logo {
     height: 65px;
   }
@@ -1107,7 +1165,6 @@ strong {
     height: 400px;
   }
 
-
   .img__w__sm__logo {
     width: 200px;
   }
@@ -1122,6 +1179,13 @@ strong {
 
   .img__device__comeaventura {
     width: 300px;
+  }
+
+  .agencies-h {
+    height: var(--height-agencies);
+  }
+  .agencies__map-h {
+    height: 500px;
   }
 
   .product {
@@ -1376,7 +1440,7 @@ video::-webkit-media-controls-panel {
 }
 
 .container-gallery {
-  background-color: #fafafa;
+  background-color: var(--color-light);
   position: relative;
 }
 
