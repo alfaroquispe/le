@@ -263,36 +263,36 @@ button {
   background-image: url('./img/logos/social_networks/red_facebook.svg');
 }
 
-.nav__sn-fb:hover {
-  background-image: url('./img/logos/social_networks/black_facebook.svg');
-}
-
 .nav__sn-ig {
   background-image: url('./img/logos/social_networks/red_instagram.svg');
-}
-
-.nav__sn-ig:hover {
-  background-image: url('./img/logos/social_networks/black_instagram.svg');
 }
 
 .nav__sn-tt {
   background-image: url('./img/logos/social_networks/red_tiktok.svg');
 }
 
-.nav__sn-tt:hover {
-  background-image: url('./img/logos/social_networks/black_tiktok.svg');
-}
-
 .nav__sn-yt {
   background-image: url('./img/logos/social_networks/red_youtube.svg');
 }
 
-.nav__sn-yt:hover {
-  background-image: url('./img/logos/social_networks/black_youtube.svg');
-}
-
 .nav__sn-tw {
   background-image: url('./img/logos/social_networks/red_twitter.svg');
+}
+
+.nav__sn-fb:hover {
+  background-image: url('./img/logos/social_networks/black_facebook.svg');
+}
+
+.nav__sn-ig:hover {
+  background-image: url('./img/logos/social_networks/black_instagram.svg');
+}
+
+.nav__sn-tt:hover {
+  background-image: url('./img/logos/social_networks/black_tiktok.svg');
+}
+
+.nav__sn-yt:hover {
+  background-image: url('./img/logos/social_networks/black_youtube.svg');
 }
 
 .nav__sn-tw:hover {
