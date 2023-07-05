@@ -8,7 +8,7 @@ producto fondo 1500 x 1800
 
 
 :root {
-  --no-of-slides: 7;
+  --no-of-slides: 16;
   --slides-in-view: 4;
   --slide-width: 230px;
   --slide-height: 80px;
@@ -46,6 +46,7 @@ producto fondo 1500 x 1800
 .bory {
   border: 1px solid yellow;
 }
+
 .borg {
   border: 1px solid green;
 }
@@ -53,16 +54,19 @@ producto fondo 1500 x 1800
 /* font-family: 'Antonio', sans-serif;
 font-family: 'Barlow Condensed', sans-serif;
 font-family: 'Bebas Neue', sans-serif;
+font-family: 'Dancing Script', cursive;
 font-family: 'Hind Madurai', sans-serif;
 font-family: 'Lora', serif;
 font-family: 'Merriweather', serif;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Parisienne', cursive;
 font-family: 'Poltawski Nowy', serif;
 font-family: 'PT Serif', serif;
+font-family: 'Questrial', sans-serif;
 font-family: 'Source Serif 4', serif;
 font-family: 'Vollkorn', serif;
-font-family: 'Questrial', sans-serif;
 */
 
 /* =================================== GENERAL =================================== */
@@ -89,9 +93,26 @@ a {
   background-color: var(--color-lead-mid);
   /* color: #111820; */
 }
+
 .bg__light {
   background-color: var(--color-light);
   /* color: #111820; */
+}
+
+.border__bottom-title {
+  display: inline-flex;
+  position: relative;
+}
+
+.border__bottom-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  /* Adjust the width as needed */
+  height: 8px;
+  background-color: var(--color-red);
 }
 
 h1 {
@@ -118,6 +139,7 @@ h3 {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 /* h3 {
   font-family: var(--font-family-title);
   font-size: 2.5rem;
@@ -450,6 +472,7 @@ button {
   font-size: 18px;
   font-weight: 400;
 }
+
 .nav-link-info {
   color: var(--color-black);
   font-family: 'Barlow Condensed', sans-serif;
@@ -461,61 +484,75 @@ button {
 /* .nav-link-line:hover, .nav-link-type:hover, .nav-link-presentation:hover {
   color: var(--color-red);
 } */
-.nav-link-info:hover  {
+.nav-link-info:hover {
   color: var(--color-black);
   border-bottom: 2px solid var(--color-red) !important;
 }
-.nav-link-info.active  {
+
+.nav-link-info.active {
   color: var(--color-black) !important;
   background-color: none;
   border-bottom: 2px solid var(--color-red) !important;
 }
-.nav-link-info.active  {
+
+.nav-link-info.active {
   color: var(--color-black) !important;
   border-bottom: 2px solid var(--color-red) !important;
 }
-.nav-link-line.active:hover, .nav-link-presentation.active:hover {
+
+.nav-link-line.active:hover,
+.nav-link-presentation.active:hover {
   color: var(--color-red);
   cursor: default;
 }
+
 .nav-link-info.active:hover {
   color: var(--color-red);
   cursor: default;
 }
+
 .nav-link-type.active:hover {
   color: #bfc0c0;
   cursor: default;
 }
+
 .nav-pills .nav-link.active,
 .nav-pills .show>.nav-link {
   color: white;
   background-color: var(--color-red);
 }
+
 .nav-link-agencie {
   color: #000;
   text-decoration: none;
   border: 1px solid transparent !important;
 }
+
 .nav-link-agencie.active {
   color: #000 !important;
   background-color: white !important;
   border: 1px solid var(--color-red) !important;
 }
+
 .nav-link-agencie.active h5 {
   color: var(--color-red);
 }
+
 .nav-link-agencie:hover h5 {
   color: var(--color-red);
 }
+
 .nav-link-agencie:hover {
   color: #000 !important;
   border: 1px solid var(--color-red) !important;
 }
+
 .product__content-substance {
   font-family: 'Questrial', sans-serif;
   text-align: start;
   text-transform: none;
 }
+
 .product__content-percentage {
   font-family: 'Questrial', sans-serif;
   font-size: 22px !important;
@@ -526,6 +563,7 @@ button {
 .border__bottom_4 {
   border-bottom: 4px solid black;
 }
+
 .border__bottom_1 {
   border-bottom: 1px solid black;
 }
@@ -580,33 +618,68 @@ button {
 
 /* =================================== banner candies =================================== */
 .banner__title {
-  background-color: rgba(255, 255, 255, 0.075);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 10px;
   text-align: center;
 }
+
 .banner__text {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
 }
-.banner__container {
-  
-}
+
+.banner__container {}
+
 .banner__img {
   margin-bottom: -5%;
 }
+
 .banner {
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  object-position: center !important;
+  object-fit: cover;
   position: relative;
 }
+
+.history__banner {
+  src: url('./img/about/history/cpichincham.png');
+}
+
+.history h1 {
+  font-family: 'Bebas Neue';
+  color: var(--color-red);
+}
+.history h2 {
+  color: var(--color-black);
+  font-family: 'Parisienne';
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
 .background__img-snacks {
   background-image: url('../../img/backgrounds/background_snacks.jpg');
 }
+
 .background__img-dulces {
   background-image: url('../../img/backgrounds/background_dulces.jpg');
 }
+
 .background__img-fideos {
   background-image: url('../../img/backgrounds/background_fideos.jpg');
+}
+
+.background__img-history {
+  background-image: url('../../img/about/history/cpichinchamV.png');
+}
+
+.background__img-El-Alto {
+  background-image: url('../../img/about/history/Planta El Alto0.png');
+}
+
+.background__img-La-Estrella {
+  background-image: url('../../img/about/history/La Estrella 15tR.png');
 }
 
 
@@ -972,32 +1045,72 @@ strong {
 
 /* ====================================================================== carousel products ====================================================================== */
 .carousel__image-banda-color {
-  background-image: url('./img/marcas/banda-color.png');
+  background-image: url('./img/marcas/banda-color.webp');
 }
 
 .carousel__image-eucalipto {
-  background-image: url('./img/marcas/eucalipto.png');
+  background-image: url('./img/marcas/eucalipto.webp');
 }
 
 .carousel__image-fideos {
-  background-image: url('./img/marcas/fideos.png');
+  background-image: url('./img/marcas/fideos.webp');
 }
 
 .carousel__image-stella {
-  background-image: url('./img/marcas/stella-de-oro.png');
+  background-image: url('./img/marcas/stella-de-oro.webp');
   background-size: auto 60px;
 }
 
-.carousel__image-pipocas {
-  background-image: url('./img/marcas/pipocas.png');
+.carousel__image-chizitos {
+  background-image: url('./img/marcas/chizitos.webp');
 }
 
-.carousel__image-chizitos {
-  background-image: url('./img/marcas/chizitos.png');
+.carousel__image-pipocas {
+  background-image: url('./img/marcas/pipocas.webp');
+}
+
+.carousel__image-bocadits {
+  background-image: url('./img/marcas/bocadits.webp');
+}
+
+.carousel__image-chizitos-picante {
+  background-image: url('./img/marcas/chizitos-picante.webp');
 }
 
 .carousel__image-comecome {
-  background-image: url('./img/marcas/comecome.png');
+  background-image: url('./img/marcas/comecome.webp');
+}
+
+.carousel__image-pipocas-con-chocolate {
+  background-image: url('./img/marcas/pipocas-con-chocolate.webp');
+}
+
+.carousel__image-charroncitos {
+  background-image: url('./img/marcas/charroncitos.webp');
+}
+
+.carousel__image-charroncitosft {
+  background-image: url('./img/marcas/charroncitosft.webp');
+}
+
+.carousel__image-charroncitosfn {
+  background-image: url('./img/marcas/charroncitosfn.webp');
+}
+
+.carousel__image-olitas {
+  background-image: url('./img/marcas/olitas.webp');
+}
+
+.carousel__image-bananas {
+  background-image: url('./img/marcas/1bananas.png');
+}
+
+.carousel__image-bolichoc {
+  background-image: url('./img/marcas/1bolichoc.png');
+}
+
+.carousel__image-conguitos {
+  background-image: url('./img/marcas/1conguits.png');
 }
 
 .carousel .carousel-indicators-2 button {
@@ -1032,6 +1145,10 @@ strong {
   height: 300px;
 }
 
+.height__banner-history {
+  height: 350px;
+}
+
 .img__w__sm__logo {
   width: 140px;
 }
@@ -1047,14 +1164,16 @@ strong {
 .img__device__comeaventura {
   width: 150px;
 }
+
 .border__bottom__substance {
   height: 1px;
   background-color: var(--color-black);
   margin-bottom: .25rem;
   width: 37%;
 }
+
 .product__daily__value {
-  font-family:'Barlow Condensed', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-size: 20px !important;
   font-weight: 400;
 }
@@ -1082,26 +1201,32 @@ strong {
   background-size: auto 100% !important;
   align-self: center;
 }
+
 /* ====================================================================== carousel agencies ====================================================================== */
 .accordion {
   --bs-accordion-btn-active-icon: url('./img/svg/accordion-button.svg');
 }
+
 .agencies-h {
   height: auto;
 }
+
 .agencies__map-h {
   height: 250px;
 }
+
 .accordion-body {
   padding: 0px 0px 0px 5px;
   max-height: 395px;
   overflow-y: scroll;
 }
+
 .accordion-item {
   color: var(--bs-accordion-color);
   background-color: var(--bs-accordion-bg);
   border: none;
 }
+
 .accordion-button {
   padding: 15px 15px 15px 0px;
   font-size: 1rem;
@@ -1109,13 +1234,15 @@ strong {
   color: var(--color-black);
   background-color: var(--color-light);
 }
+
 .accordion-button:focus {
   z-index: 3;
   border-color: var(--bs-accordion-btn-focus-border-color);
   outline: 0;
   box-shadow: none;
 }
-.accordion-button h5{
+
+.accordion-button h5 {
   color: var(--color-black);
 }
 
@@ -1123,33 +1250,68 @@ strong {
   background-color: var(--color-light);
   box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
 }
+
 .accordion-button:not(.collapsed) h5 {
   color: var(--color-red) !important;
 }
+
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
   transform: var(--bs-accordion-btn-icon-transform);
 }
+
 .nav-link:hover {
   color: var(--color-red);
+}
+
+.banner__container-text {
+  /* position: absolute;
+  width: 50%;
+  height: 100%;
+  bottom: 0; */
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  left: 0;
+}
+.right__0 {
+  right: 0;
+}
+.history h1 {
+  font-size: 2.5rem;
+}
+.history h2 {
+  font-size: 1.75rem;
 }
 
 
 /* // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap */
 /* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 400px) {
+  .history h1 {
+    font-size: 2.75rem;
+  }
+  .history h2 {
+    font-size: 2rem;
+  }
+
+}
 @media (min-width: 576px) {
   h2 {
     font-size: 2.75rem;
   }
+
   .product__container-package {
     min-width: 375px !important;
     height: 450px !important;
   }
-  
+
   .socialnetwork__logo {
     height: 65px;
   }
+
   .slider__p {
     line-height: 1.3;
   }
@@ -1161,14 +1323,27 @@ strong {
   .img__premium_product {
     height: 340px;
   }
-  
+
+  .height__banner-history {
+    height: 390px;
+  }
+
 }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+  .background__img-history {
+    background-image: url('../../img/about/history/cpichincham.png');
+  }
+
   h2 {
     font-size: 3rem;
   }
+
+  .history h2 {
+    font-size: 2.25rem;
+  }
+  
 
   .nav-link-type {
     padding: 15px 20px 15px 60px;
@@ -1190,6 +1365,10 @@ strong {
     height: 400px;
   }
 
+  .height__banner-history {
+    height: 450px;
+  }
+
   .img__w__sm__logo {
     width: 200px;
   }
@@ -1209,6 +1388,7 @@ strong {
   .agencies-h {
     height: var(--height-agencies);
   }
+
   .agencies__map-h {
     height: 500px;
   }
@@ -1233,6 +1413,18 @@ strong {
     left: 0;
     bottom: 0;
   }
+
+  
+
+  .banner__container-center {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
   .banner__img {
     margin-bottom: -3%;
     margin-left: auto;
@@ -1250,12 +1442,21 @@ strong {
   h2 {
     font-size: 3.125rem;
   }
+  .history h2 {
+    font-size: 2.5rem;
+  }
 
   .height-slider {
     height: 480px;
   }
 
   .img__premium_product {
+    /* height: 430px; */
+    width: 100%;
+    height: auto;
+  }
+
+  .height__banner-history {
     /* height: 430px; */
     width: 100%;
     height: auto;
@@ -1275,6 +1476,10 @@ strong {
 
 /* // X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+  
+  .history h2 {
+    font-size: 2.75rem;
+  }
   .px-xl-6 {
     padding: 0 4.5rem !important;
   }
@@ -1427,6 +1632,7 @@ video::-webkit-media-controls-panel {
   color: var(--color-red) !important;
   cursor: default;
 }
+
 .nav-link.link__light-active {
   cursor: pointer;
 }
@@ -1470,7 +1676,10 @@ video::-webkit-media-controls-panel {
 }
 
 
-#expandedImg, #expandedImg-product1, #expandedImg-product2, #expandedImg-product3 {
+#expandedImg,
+#expandedImg-product1,
+#expandedImg-product2,
+#expandedImg-product3 {
   cursor: pointer;
 }
 
@@ -1583,3 +1792,53 @@ EEEEEE 85
 E15349 75
 E8E8E8 75
 70 ffb3b3 */
+
+.history__border-left {
+  border-left: 2px solid var(--color-red);
+  margin-left: -2px;
+  position: relative;
+}
+.history__border-right {
+  border-right: 2px solid var(--color-red);
+  margin-right: -2px;
+  position: relative;
+}
+
+.starred::before {
+  /* Adjust as needed */
+  color: var(--color-red);
+  font-size: 35px;
+  position: absolute;
+}
+.starred-begin::before {
+  content: '\2605';
+  line-height: 0;
+  top: 0;
+  left: 0;
+  transform: translateX(-50%);
+}
+.starred-right::before {
+  background-color: #fff;
+  bottom: 50%;
+  content: '\2606';
+  line-height: .75;
+  right: -1px;
+  transform: translateX(50%);
+}
+.starred-left::before {
+  background-color: #fff;
+  bottom: 50%;
+  content: '\2606';
+  left: 0;
+  transform: translateX(-50%);
+  line-height: .75;
+}
+.starred-end::before {
+  bottom: 0;
+  content: '\2605';
+  line-height: 0;
+  right: -1px;
+  transform: translate(50%, 2px);
+  z-index: 99;
+}
+
