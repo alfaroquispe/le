@@ -1527,7 +1527,7 @@ E8E8E8 75
 .starred::before {
   /* Adjust as needed */
   color: var(--color-red);
-  font-size: 31px;
+  font-size: 30px;
   position: absolute;
 }
 .starred-begin::before {
