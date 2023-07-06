@@ -1284,251 +1284,6 @@ strong {
 }
 
 
-/* // X-Small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 400px) {
-  .history h1 {
-    font-size: 2.75rem;
-  }
-  .history h2 {
-    font-size: 2rem;
-  }
-
-}
-@media (min-width: 576px) {
-  h2 {
-    font-size: 2.75rem;
-  }
-  .history h1 {
-    font-size: 3rem;
-  }
-  .history h2 {
-    font-size: 2.25rem;
-  }
-
-  .border__bottom-title::after {
-    width: 35%;
-    height: 8px;
-  }
-
-  .product__container-package {
-    min-width: 375px !important;
-    height: 450px !important;
-  }
-
-  .socialnetwork__logo {
-    height: 65px;
-  }
-
-  .slider__p {
-    line-height: 1.3;
-  }
-
-  .img__favorite_products {
-    width: 60%;
-  }
-
-  .img__premium_product {
-    height: 340px;
-  }
-
-  .height__banner-history {
-    height: 390px;
-  }
-
-}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .background__img-history {
-    background-image: url('../../img/about/history/cpichincham.png');
-  }
-
-  h2 {
-    font-size: 3rem;
-  }
-
-  .history h2 {
-    font-size: 2.25rem;
-  }
-
-  .banner__container-text {
-    bottom: 0;
-    height: 100%;
-    width: 50%;
-  }
-  .banner__position-mid {
-    width: 100%;
-  }
-  .banner__position-mid-md-right {
-    right: 0;
-  }
-
-  .history__border-left {
-    margin-left: -2px;
-  }
-  .history__border-right {
-    margin-right: -2px;
-  }
-  .starred-right::before {
-    right: -1px;
-  }
-
-  .nav-link-type {
-    padding: 15px 20px 15px 60px;
-  }
-
-  .height-slider {
-    height: 360px;
-  }
-
-  .button__red {
-    padding: 10px 40px;
-  }
-
-  .socialnetwork__logo {
-    height: 70px;
-  }
-
-  .img__premium_product {
-    height: 400px;
-  }
-
-  .height__banner-history {
-    height: 450px;
-  }
-
-  .img__w__sm__logo {
-    width: 200px;
-  }
-
-  .img__h__md__logo {
-    height: 150px;
-  }
-
-  .img__play-store {
-    width: 160px;
-  }
-
-  .img__device__comeaventura {
-    width: 300px;
-  }
-
-  .agencies-h {
-    height: var(--height-agencies);
-  }
-
-  .agencies__map-h {
-    height: 500px;
-  }
-
-  .product {
-    width: 100%;
-  }
-
-  .product__img-package {
-    width: 70% !important;
-  }
-
-  .product__container-package {
-    max-width: 330px !important;
-    height: 396px !important;
-  }
-
-  .banner__container {
-    position: absolute;
-    width: 40%;
-    height: 100%;
-    left: 0;
-    bottom: 0;
-  }
-
-  
-
-  .banner__container-center {
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-  }
-
-  .banner__img {
-    margin-bottom: -3%;
-    margin-left: auto;
-    width: 60%;
-  }
-
-}
-
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-
-  h2 {
-    font-size: 3.125rem;
-  }
-  .history h2 {
-    font-size: 2.5rem;
-  }
-  .banner__container-text {
-    width: 50%;
-  }
-  .banner__position-mid {
-    width: 100%;
-  }
-
-  .height-slider {
-    height: 480px;
-  }
-
-  .img__premium_product {
-    /* height: 430px; */
-    width: 100%;
-    height: auto;
-  }
-
-  .height__banner-history {
-    /* height: 430px; */
-    width: 100%;
-    height: auto;
-  }
-
-  .product__img-package {
-    width: 75% !important;
-  }
-
-  .product__container-package {
-    max-width: 375px !important;
-    height: 450px !important;
-  }
-
-
-}
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  
-  .history h2 {
-    font-size: 2.75rem;
-  }
-  .px-xl-6 {
-    padding: 0 4.5rem !important;
-  }
-
-  .product__container-package {
-    max-width: 420px !important;
-    height: 504px !important;
-  }
-}
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
-
 
 /* ================================================ OP1 ================================================================= */
 
@@ -1566,69 +1321,6 @@ strong {
 .carousel-inner-2 .carousel-item-start {
   transform: translateX(0);
 }
-
-/* ================================================ OP1 ================================================================= */
-
-
-
-/* ================================================ OP2 ================================================================= */
-/* medium - display 2  */
-/* @media (min-width: 768px) {
-
-  .carousel-inner-2 .carousel-item-right.active,
-  .carousel-inner-2 .carousel-item-next {
-      transform: translateX(50%);
-  }
-
-  .carousel-inner-2 .carousel-item-left.active,
-  .carousel-inner-2 .carousel-item-prev {
-      transform: translateX(-50%);
-  }
-} */
-
-/* large - display 3 */
-/* @media (min-width: 992px) {
-
-  .carousel-inner-2 .carousel-item-right.active,
-  .carousel-inner-2 .carousel-item-next {
-      transform: translateX(33%);
-  }
-
-  .carousel-inner-2 .carousel-item-left.active,
-  .carousel-inner-2 .carousel-item-prev {
-      transform: translateX(-33%);
-  }
-}
-
-@media (max-width: 768px) {
-  .carousel-inner-2 .carousel-item-2>div {
-      display: none;
-  }
-
-  .carousel-inner-2 .carousel-item-2>div:first-child {
-      display: block;
-  }
-}
-
-.carousel-inner-2 .carousel-item.active,
-.carousel-inner-2 .carousel-item-next,
-.carousel-inner-2 .carousel-item-prev {
-  display: flex;
-}
-
-.carousel-inner-2 .carousel-item-right,
-.carousel-inner-2 .carousel-item-left {
-  transform: translateX(0);
-} */
-/* ================================================ OP2 ================================================================= */
-
-
-
-
-
-
-
-
 
 video::-webkit-media-controls-panel {
   /* // Your styling here */
@@ -1803,12 +1495,6 @@ video::-webkit-media-controls-panel {
   cursor: pointer;
 }
 
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px) {
-  .product__modal__container-img {
-    height: 100%;
-  }
-}
 
 /* ==================================================== modal image ====================================================*/
 
@@ -1841,7 +1527,7 @@ E8E8E8 75
 .starred::before {
   /* Adjust as needed */
   color: var(--color-red);
-  font-size: 35px;
+  font-size: 31px;
   position: absolute;
 }
 .starred-begin::before {
@@ -1877,3 +1563,260 @@ E8E8E8 75
   z-index: 99;
 }
 
+
+
+
+/* // X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 400px) {
+  .history h1 {
+    font-size: 2.75rem;
+  }
+  .history h2 {
+    font-size: 2rem;
+  }
+
+}
+@media (min-width: 576px) {
+  h2 {
+    font-size: 2.75rem;
+  }
+  .history h1 {
+    font-size: 3rem;
+  }
+  .history h2 {
+    font-size: 2.25rem;
+  }
+
+  .border__bottom-title::after {
+    width: 35%;
+    height: 8px;
+  }
+
+  .product__container-package {
+    min-width: 375px !important;
+    height: 450px !important;
+  }
+
+  .socialnetwork__logo {
+    height: 65px;
+  }
+
+  .slider__p {
+    line-height: 1.3;
+  }
+
+  .img__favorite_products {
+    width: 60%;
+  }
+
+  .img__premium_product {
+    height: 340px;
+  }
+
+  .height__banner-history {
+    height: 390px;
+  }
+
+}
+
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+  .product__modal__container-img {
+    height: 100%;
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .background__img-history {
+    background-image: url('../../img/about/history/cpichincham.png');
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  .history h2 {
+    font-size: 2.25rem;
+  }
+
+  .banner__container-text {
+    bottom: 0;
+    height: 100%;
+    width: 50%;
+  }
+  .banner__position-mid {
+    width: 100%;
+  }
+  .banner__position-mid-md-right {
+    right: 0;
+  }
+
+  .history__border-left {
+    margin-left: -2px;
+  }
+  .history__border-right {
+    margin-right: -2px;
+  }
+  .starred-right::before {
+    right: -1px;
+  }
+
+  .nav-link-type {
+    padding: 15px 20px 15px 60px;
+  }
+
+  .height-slider {
+    height: 360px;
+  }
+
+  .button__red {
+    padding: 10px 40px;
+  }
+
+  .socialnetwork__logo {
+    height: 70px;
+  }
+
+  .img__premium_product {
+    height: 400px;
+  }
+
+  .height__banner-history {
+    height: 450px;
+  }
+
+  .img__w__sm__logo {
+    width: 200px;
+  }
+
+  .img__h__md__logo {
+    height: 150px;
+  }
+
+  .img__play-store {
+    width: 160px;
+  }
+
+  .img__device__comeaventura {
+    width: 300px;
+  }
+
+  .agencies-h {
+    height: var(--height-agencies);
+  }
+
+  .agencies__map-h {
+    height: 500px;
+  }
+
+  .product {
+    width: 100%;
+  }
+
+  .product__img-package {
+    width: 70% !important;
+  }
+
+  .product__container-package {
+    max-width: 330px !important;
+    height: 396px !important;
+  }
+
+  .banner__container {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+  }
+
+  .banner__container-center {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .banner__img {
+    margin-bottom: -3%;
+    margin-left: auto;
+    width: 60%;
+  }
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 3.125rem;
+  }
+  .history h2 {
+    font-size: 2.5rem;
+  }
+
+  .starred::before {
+    font-size: 37px;
+  }
+  .banner__container-text {
+    width: 50%;
+  }
+  .banner__position-mid {
+    width: 100%;
+  }
+
+  .height-slider {
+    height: 480px;
+  }
+
+  .img__premium_product {
+    /* height: 430px; */
+    width: 100%;
+    height: auto;
+  }
+
+  .height__banner-history {
+    /* height: 430px; */
+    width: 100%;
+    height: auto;
+  }
+
+  .product__img-package {
+    width: 75% !important;
+  }
+
+  .product__container-package {
+    max-width: 375px !important;
+    height: 450px !important;
+  }
+
+
+}
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  
+  .history h2 {
+    font-size: 2.75rem;
+  }
+  .px-xl-6 {
+    padding: 0 4.5rem !important;
+  }
+
+  .product__container-package {
+    max-width: 420px !important;
+    height: 504px !important;
+  }
+}
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {}
