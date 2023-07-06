@@ -8,11 +8,11 @@ producto fondo 1500 x 1800
 
 
 :root {
-  --no-of-slides: 16;
+  --no-of-slides: 15;
   --slides-in-view: 4;
   --slide-width: 230px;
   --slide-height: 80px;
-  --iteration-time: 40s;
+  --iteration-time: 50s;
   --color-red: #ed1c24;
   --color-red1: #ff1a1a;
   --color-red2: #E61717;
@@ -618,7 +618,7 @@ button {
 
 /* =================================== banner candies =================================== */
 .banner__title {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   text-align: center;
 }
@@ -642,10 +642,6 @@ button {
   position: relative;
 }
 
-.history__banner {
-  src: url('./img/about/history/cpichincham.png');
-}
-
 .history h1 {
   font-family: 'Bebas Neue';
   color: var(--color-red);
@@ -659,28 +655,17 @@ button {
 }
 
 .background__img-snacks {
-  background-image: url('../../img/backgrounds/background_snacks.jpg');
+  background-image: url('../../img/backgrounds/background_snacks.webp');
 }
 
 .background__img-dulces {
-  background-image: url('../../img/backgrounds/background_dulces.jpg');
+  background-image: url('../../img/backgrounds/background_dulces.webp');
 }
 
 .background__img-fideos {
-  background-image: url('../../img/backgrounds/background_fideos.jpg');
+  background-image: url('../../img/backgrounds/background_fideos.webp');
 }
 
-.background__img-history {
-  background-image: url('../../img/about/history/cpichinchamV.png');
-}
-
-.background__img-El-Alto {
-  background-image: url('../../img/about/history/Planta El Alto0.png');
-}
-
-.background__img-La-Estrella {
-  background-image: url('../../img/about/history/La Estrella 15tR.png');
-}
 
 
 
@@ -1102,15 +1087,15 @@ strong {
 }
 
 .carousel__image-bananas {
-  background-image: url('./img/marcas/1bananas.png');
+  background-image: url('./img/marcas/bananas.webp');
 }
 
 .carousel__image-bolichoc {
-  background-image: url('./img/marcas/1bolichoc.png');
+  background-image: url('./img/marcas/bolichoc.webp');
 }
 
 .carousel__image-conguitos {
-  background-image: url('./img/marcas/1conguits.png');
+  background-image: url('./img/marcas/conguitos.webp');
 }
 
 .carousel .carousel-indicators-2 button {
@@ -1524,20 +1509,20 @@ E8E8E8 75
   position: relative;
 }
 
-.starred::before {
+.star::before {
   /* Adjust as needed */
   color: var(--color-red);
   font-size: 30px;
   position: absolute;
 }
-.starred-begin::before {
+.star-begin::before {
   content: '\2605';
   line-height: 0;
   top: 0;
   left: 0;
   transform: translateX(-50%);
 }
-.starred-right::before {
+.star-right::before {
   background-color: #fff;
   bottom: 50%;
   content: '\2606';
@@ -1546,7 +1531,7 @@ E8E8E8 75
   /* right: -1px; */
   transform: translateX(50%);
 }
-.starred-left::before {
+.star-left::before {
   background-color: #fff;
   bottom: 50%;
   content: '\2606';
@@ -1554,12 +1539,12 @@ E8E8E8 75
   transform: translateX(-50%);
   line-height: .75;
 }
-.starred-end::before {
+.star-end::before {
   bottom: 0;
   content: '\2605';
   line-height: 0;
   right: -1px;
-  transform: translate(50%, 2px);
+  transform: translate(50%, 1px);
   z-index: 99;
 }
 
@@ -1631,9 +1616,6 @@ E8E8E8 75
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .background__img-history {
-    background-image: url('../../img/about/history/cpichincham.png');
-  }
 
   h2 {
     font-size: 3rem;
@@ -1661,7 +1643,7 @@ E8E8E8 75
   .history__border-right {
     margin-right: -2px;
   }
-  .starred-right::before {
+  .star-right::before {
     right: -1px;
   }
 
@@ -1764,7 +1746,7 @@ E8E8E8 75
     font-size: 2.5rem;
   }
 
-  .starred::before {
+  .star::before {
     font-size: 37px;
   }
   .banner__container-text {
