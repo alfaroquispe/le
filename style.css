@@ -75,6 +75,13 @@ a {
   text-decoration: none !important;
 }
 
+img {
+  aspect-ratio: attr(width) / attr(height);
+}
+picture {
+  aspect-ratio: attr(width) / attr(height);
+}
+
 
 .color__brand__white {
   color: var(--color-white);
@@ -654,6 +661,53 @@ button {
   line-height: 1.2;
 }
 
+.certification h2 {
+  color: var(--color-black);
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 1.1
+}
+.certification img {
+  height: 100px;
+}
+
+.image-container {
+  /* display: inline-block; */
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-image {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* animation: imageSwap 5s infinite alternate; */
+}
+
+.image-container:hover .hover-image {
+  opacity: 1;
+}
+
+.device {
+  display: none;
+}
+
+@keyframes imageSwap {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #a6a6a6;
+}
+
+
 .background__img-snacks {
   background-image: url('../../img/backgrounds/background_snacks.webp');
 }
@@ -1008,10 +1062,6 @@ strong {
   counter-reset: slideNo;
 }
 
-.image-container {
-  position: relative;
-  display: inline-block;
-}
 
 
 
