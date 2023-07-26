@@ -1,0 +1,10 @@
+User-agent: Googlebot-Image
+Disallow: /img/backgrounds/background_snacks.webp
+Disallow: /img/backgrounds/background_dulces.webp
+Disallow: /img/backgrounds/background_fideos.webp
+Disallow: /img/slider/waterfall-snacks.webp
+Disallow: /img/slider/waterfall-dulces.webp
+Disallow: /img/slider/waterfall-fideos.webp
+Disallow: /img/productos/snacks/banner-snacks.webp
+Disallow: /img/productos/snacks/banner-dulces.webp
+Disallow: /img/productos/snacks/banner-fideos.webp
