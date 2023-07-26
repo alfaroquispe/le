@@ -707,7 +707,7 @@ button {
   }
 }
 
-.carousel-indicators [data-bs-target] {
+.carousel-indicators_certification [data-bs-target] {
   background-color: #a6a6a6;
 }
 
